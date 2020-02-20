@@ -4,9 +4,9 @@ input.onButtonPressed(Button.A, function () {
     if (iBIT.ReadADC(ibitReadADC.ADC0) > "left" && iBIT.ReadADC(ibitReadADC.ADC1) > "Right" {
         iBIT.Motor(ibitMotor.Forward, 70)
     } else if (iBIT.ReadADC(ibitReadADC.ADC0) > "left" && iBIT.ReadADC(ibitReadADC.ADC1) < "Right") {
-        iBIT.Spin(ibitSpin.Left, 80)
+        iBIT.Spin(ibitSpin.Left, 90)
     } else if (iBIT.ReadADC(ibitReadADC.ADC0) < "left" && iBIT.ReadADC(ibitReadADC.ADC1) > "Right") {
-        iBIT.Spin(ibitSpin.Right, 80)
+        iBIT.Spin(ibitSpin.Right, 90)
     } else if (iBIT.ReadADC(ibitReadADC.ADC0) < "left" && iBIT.ReadADC(ibitReadADC.ADC1) < "Right") {
         iBIT.MotorStop()
     }
