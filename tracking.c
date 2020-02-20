@@ -7,7 +7,7 @@ input.onButtonPressed(Button.A, function () {
         iBIT.Spin(ibitSpin.Left, 80)
     } else if (iBIT.ReadADC(ibitReadADC.ADC0) < "left" && iBIT.ReadADC(ibitReadADC.ADC1) > "Right") {
         iBIT.Spin(ibitSpin.Right, 80)
-    } else if (iBIT.ReadADC(ibitReadADC.ADC0) < "left" && iBIT.ReadADC(ibitReadADC.ADC1) > "Right") {
+    } else if (iBIT.ReadADC(ibitReadADC.ADC0) < "left" && iBIT.ReadADC(ibitReadADC.ADC1) < "Right") {
         iBIT.MotorStop()
     }
 
